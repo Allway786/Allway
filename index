@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Way Convenience Stores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">All Way Convenience Stores</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#promotions">Promotions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to All Way Convenience Stores</h1>
+    <p>Your trusted neighborhood store for everything you need!</p>
+    <a href="#contact" class="cta-button">Call Now for Deals</a>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Snacks">
+        <h3>Snacks</h3>
+        <p>Delicious snacks for every craving.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Beverages">
+        <h3>Beverages</h3>
+        <p>Refresh yourself with a wide selection of drinks.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Essentials">
+        <h3>Household Essentials</h3>
+        <p>Everyday items to make your life easier.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotions Section -->
+  <section class="promotions" id="promotions">
+    <h2>Special Offers</h2>
+    <div class="promotion-banner">
+      <h3>Buy One Get One Free!</h3>
+      <p>On select snacks and beverages this week.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <ul class="locations">
+      <li><strong>237 Gerrard St East, Toronto, Ontario</strong></li>
+      <li><strong>900 Queen St East, Toronto, Ontario</strong></li>
+    </ul>
+    <p>Email: <a href="mailto:info@allwayconvenience.com">info@allwayconvenience.com</a></p>
+    <p>Phone: (123) 456-7890</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 All Way Convenience Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
