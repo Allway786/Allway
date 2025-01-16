@@ -8,20 +8,58 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Full-page video container */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110%; /* Slightly enlarge the width */
+      height: 110%; /* Slightly enlarge the height */
+      object-fit: cover; /* Makes the video cover the entire page */
+      transform: translate(-5%, -5%); /* Shift the video to make it more expansive */
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 2;
+    }
+
+    /* Ensure the video does not overlap with content */
+    .container {
+      position: relative;
+      z-index: 3;
+    }
+  </style>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-       <a class="navbar-brand" href="#">
-      <img src="lot.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
-      All Way Convenience Stores
-    </a>
+      <a class="navbar-brand" href="#">
+                All Way Convenience Stores
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+<img src="lot.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+        <img src="propass.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+
           <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#promotions">Promotions</a></li>
@@ -31,68 +69,68 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Background Video -->
-  <section class="hero text-center text-white d-flex align-items-center justify-content-center position-relative" style="height: 100vh;">
-    <video autoplay muted loop class="position-absolute w-100 h-100" style="object-fit: cover; z-index: -1;">
-      <source src="grocery-store.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div>
+  <!-- Hero Section with Full-Page Video -->
+  <section class="hero">
+    <!-- Video iframe with autoplay, muted, and controls=0 to remove the YouTube controls bar -->
+    <iframe src="https://www.youtube.com/embed/CZRhALGUhlQ?autoplay=1&start=42&end=71&mute=1&controls=0&loop=1&playlist=CZRhALGUhlQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <div class="hero-content">
       <h1 class="display-4">Welcome to All Way Convenience Stores</h1>
       <p class="lead">Your trusted neighborhood store for everything you need!</p>
       <a href="#contact" class="btn btn-primary btn-lg">Call Now for Deals</a>
     </div>
   </section>
 
-<section class="container my-5" id="products">
-  <h2 class="text-center mb-4">Our Products</h2>
-  <div class="row text-center">
-    <div class="col-md-4">
-      <img src="snacks.png" class="img-fluid" alt="Snacks">
-      <h3>Snacks</h3>
-      <p>Delicious snacks for every craving.</p>
+  <!-- Products Section -->
+  <section class="container my-5" id="products">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="snacks.png" class="img-fluid" alt="Snacks">
+        <h3>Snacks</h3>
+        <p>Delicious snacks for every craving.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="drinks.png" class="img-fluid" alt="Drinks">
+        <h3>Drinks</h3>
+        <p>Refresh yourself with a wide selection of beverages.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="household.png" class="img-fluid" alt="Household Items">
+        <h3>Household Items</h3>
+        <p>Essential items for your home.</p>
+      </div>
     </div>
-    <div class="col-md-4">
-      <img src="drinks.png" class="img-fluid" alt="Drinks">
-      <h3>Drinks</h3>
-      <p>Refresh yourself with a wide selection of beverages.</p>
-    </div>
-    <div class="col-md-4">
-      <img src="household.png" class="img-fluid" alt="Household Items">
-      <h3>Household Items</h3>
-      <p>Essential items for your home.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Services Section -->
-<section class="bg-secondary py-5" id="services">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Services</h2>
-    <div class="row">
-      <div class="col-md-3 text-center mb-4">
-        <img src="olg.png" class="img-fluid" alt="OLG Lottery">
-        <h4>OLG Lottery</h4>
-        <p>Try your luck with lottery tickets.</p>
-      </div>
-      <div class="col-md-3 text-center mb-4">
-        <img src="passport.png" class="img-fluid" alt="Passport Photos">
-        <h4>Passport Photos</h4>
-        <p>Quick and professional passport photos.</p>
-      </div>
-      <div class="col-md-3 text-center mb-4">
-        <img src="key.png" class="img-fluid" alt="Key Cutting">
-        <h4>Key Cutting</h4>
-        <p>Fast and reliable key cutting services.</p>
-      </div>
-      <div class="col-md-3 text-center mb-4">
-        <img src="shirt.png" class="img-fluid" alt="T-shirt Printing">
-        <h4>T-shirt Printing</h4>
-        <p>Custom t-shirt printing available.</p>
+  <section class="bg-secondary py-5" id="services">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-3 text-center mb-4">
+          <img src="olg.png" class="img-fluid" alt="OLG Lottery">
+          <h4>OLG Lottery</h4>
+          <p>Try your luck with lottery tickets.</p>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+          <img src="passport.png" class="img-fluid" alt="Passport Photos">
+          <h4>Passport Photos</h4>
+          <p>Quick and professional passport photos.</p>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+          <img src="key.png" class="img-fluid" alt="Key Cutting">
+          <h4>Key Cutting</h4>
+          <p>Fast and reliable key cutting services.</p>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+          <img src="shirt.png" class="img-fluid" alt="T-shirt Printing">
+          <h4>T-shirt Printing</h4>
+          <p>Custom t-shirt printing available.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Promotions Section -->
   <section class="container my-5" id="promotions">
