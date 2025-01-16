@@ -4,73 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Way Convenience Stores</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">All Way Convenience Stores</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#products">Products</a></li>
-        <li><a href="#promotions">Promotions</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+       <a class="navbar-brand" href="#">
+      <img src="C:\Users\alysh\Desktop\All Way\images\lot.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px;">
+      All Way Convenience Stores
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#promotions">Promotions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to All Way Convenience Stores</h1>
-    <p>Your trusted neighborhood store for everything you need!</p>
-    <a href="#contact" class="cta-button">Call Now for Deals</a>
-  </section>
-
-  <!-- Products Section -->
-  <section class="products" id="products">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Snacks">
-        <h3>Snacks</h3>
-        <p>Delicious snacks for every craving.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Beverages">
-        <h3>Beverages</h3>
-        <p>Refresh yourself with a wide selection of drinks.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Essentials">
-        <h3>Household Essentials</h3>
-        <p>Everyday items to make your life easier.</p>
-      </div>
+  <!-- Hero Section with Background Video -->
+  <section class="hero text-center text-white d-flex align-items-center justify-content-center position-relative" style="height: 100vh;">
+    <video autoplay muted loop class="position-absolute w-100 h-100" style="object-fit: cover; z-index: -1;">
+      <source src="grocery-store.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div>
+      <h1 class="display-4">Welcome to All Way Convenience Stores</h1>
+      <p class="lead">Your trusted neighborhood store for everything you need!</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Call Now for Deals</a>
     </div>
   </section>
 
+<section class="container my-5" id="products">
+  <h2 class="text-center mb-4">Our Products</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="C:\Users\alysh\Desktop\All Way\images\snacks.png" class="img-fluid" alt="Snacks">
+      <h3>Snacks</h3>
+      <p>Delicious snacks for every craving.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="C:\Users\alysh\Desktop\All Way\images\drinks.png" class="img-fluid" alt="Drinks">
+      <h3>Drinks</h3>
+      <p>Refresh yourself with a wide selection of beverages.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="C:\Users\alysh\Desktop\All Way\images\household.png" class="img-fluid" alt="Household Items">
+      <h3>Household Items</h3>
+      <p>Essential items for your home.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+<section class="bg-secondary py-5" id="services">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row">
+      <div class="col-md-3 text-center mb-4">
+        <img src="C:\Users\alysh\Desktop\All Way\images\olg.png" class="img-fluid" alt="OLG Lottery">
+        <h4>OLG Lottery</h4>
+        <p>Try your luck with lottery tickets.</p>
+      </div>
+      <div class="col-md-3 text-center mb-4">
+        <img src="C:\Users\alysh\Desktop\All Way\images\passport.png" class="img-fluid" alt="Passport Photos">
+        <h4>Passport Photos</h4>
+        <p>Quick and professional passport photos.</p>
+      </div>
+      <div class="col-md-3 text-center mb-4">
+        <img src="C:\Users\alysh\Desktop\All Way\images\key.png" class="img-fluid" alt="Key Cutting">
+        <h4>Key Cutting</h4>
+        <p>Fast and reliable key cutting services.</p>
+      </div>
+      <div class="col-md-3 text-center mb-4">
+        <img src="C:\Users\alysh\Desktop\All Way\images\shirt.png" class="img-fluid" alt="T-shirt Printing">
+        <h4>T-shirt Printing</h4>
+        <p>Custom t-shirt printing available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- Promotions Section -->
-  <section class="promotions" id="promotions">
-    <h2>Special Offers</h2>
-    <div class="promotion-banner">
+  <section class="container my-5" id="promotions">
+    <h2 class="text-center mb-4">Special Offers</h2>
+    <div class="alert alert-success text-center">
       <h3>Buy One Get One Free!</h3>
       <p>On select snacks and beverages this week.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <ul class="locations">
-      <li><strong>237 Gerrard St East, Toronto, Ontario</strong></li>
-      <li><strong>900 Queen St East, Toronto, Ontario</strong></li>
-    </ul>
-    <p>Email: <a href="mailto:info@allwayconvenience.com">info@allwayconvenience.com</a></p>
-    <p>Phone: (123) 456-7890</p>
+  <section class="bg-dark text-white py-5" id="contact">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <ul class="list-unstyled">
+        <li><strong>237 Gerrard St East, Toronto, Ontario</strong></li>
+        <li><strong>900 Queen St East, Toronto, Ontario</strong></li>
+      </ul>
+      <p>Email: <a href="mailto:info@allwayconvenience.com" class="text-white">info@allwayconvenience.com</a></p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer bg-dark text-white text-center py-3">
     <p>© 2025 All Way Convenience Store. All rights reserved.</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
